@@ -7,8 +7,12 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 // import MenuIcon from '@mui/icons-material/Menu';
 
+type Props = {
+  title: string;
+}
 
-const Header: React.FC<{title: string}> = ({title}) => {
+
+const Header: React.FC<Props> = ({title}) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
